@@ -1,0 +1,546 @@
+{
+    "pokedesk": [
+        {
+            "id": 24,
+            "name": "Lucario",
+            "hp": 10,
+            "type": "electric",
+            "image": "https://i.pinimg.com/originals/13/d5/d4/13d5d4ad07886477d12d80260678f63c.png",
+            "attacks": [
+                {
+                    "name": "attack A",
+                    "damage": 2
+                },
+                {
+                    "name": "attack B",
+                    "damage": 2
+                }
+            ],
+            "weaknesses": [
+                {
+                    "name": "weaknesses A",
+                    "damage": 2
+                },
+                {
+                    "name": "weaknesses B",
+                    "damage": 2
+                }
+            ],
+            "isPicked": false
+        },
+        {
+            "id": 23,
+            "name": "Lycanroc",
+            "hp": 11,
+            "type": "electric",
+            "image": "https://c1.staticflickr.com/5/4227/34840739556_41e18b62f3_o.png",
+            "attacks": [
+                {
+                    "name": "attack A",
+                    "damage": 1
+                },
+                {
+                    "name": "attack B",
+                    "damage": 2
+                }
+            ],
+            "weaknesses": [
+                {
+                    "name": "weaknesses A",
+                    "damage": 1
+                }
+            ],
+            "isPicked": false
+        },
+        {
+            "id": 22,
+            "name": "Raichu",
+            "hp": 11,
+            "type": "electric",
+            "image": "https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/1123556.jpg",
+            "attacks": [
+                {
+                    "name": "attack A",
+                    "damage": 2
+                },
+                {
+                    "name": "attack B",
+                    "damage": 2
+                }
+            ],
+            "weaknesses": [
+                {
+                    "name": "weaknesses A",
+                    "damage": 2
+                },
+                {
+                    "name": "weaknesses B",
+                    "damage": 2
+                }
+            ],
+            "isPicked": true
+        },
+        {
+            "id": 21,
+            "name": "Alolan Golem",
+            "hp": 11,
+            "type": "electric",
+            "image": "https://images-na.ssl-images-amazon.com/images/I/A1ie0BIyL7L._AC_SL1500_.jpg",
+            "attacks": [
+                {
+                    "name": "attack A",
+                    "damage": 2
+                },
+                {
+                    "name": "attack B",
+                    "damage": 2
+                }
+            ],
+            "weaknesses": [
+                {
+                    "name": "weaknesses A",
+                    "damage": 2
+                },
+                {
+                    "name": "weaknesses B",
+                    "damage": 2
+                }
+            ],
+            "isPicked": true
+        },
+        {
+            "id": 20,
+            "name": "Silvaly",
+            "hp": 11,
+            "type": "electric",
+            "image": "https://images-na.ssl-images-amazon.com/images/I/A1mi2YHcxCL._SL1500_.jpg",
+            "attacks": [
+                {
+                    "name": "attack A",
+                    "damage": 2
+                },
+                {
+                    "name": "attack B",
+                    "damage": 2
+                }
+            ],
+            "weaknesses": [
+                {
+                    "name": "weaknesses A",
+                    "damage": 2
+                },
+                {
+                    "name": "weaknesses B",
+                    "damage": 2
+                }
+            ],
+            "isPicked": false
+        },
+        {
+            "id": 19,
+            "name": "Guzzlord",
+            "hp": 11,
+            "type": "electric",
+            "image": "https://images-na.ssl-images-amazon.com/images/I/916leJzx1oL._SY879_.jpg",
+            "attacks": [
+                {
+                    "name": "attack B",
+                    "damage": 2
+                }
+            ],
+            "weaknesses": [],
+            "isPicked": true
+        },
+        {
+            "id": 18,
+            "name": "Milotic",
+            "hp": 11,
+            "type": "electric",
+            "image": "https://i.pinimg.com/originals/0c/49/90/0c4990b09a7c461e2ac3edd4565093aa.jpg",
+            "attacks": [
+                {
+                    "name": "attack A",
+                    "damage": 2
+                },
+                {
+                    "name": "attack B",
+                    "damage": 5
+                }
+            ],
+            "weaknesses": [],
+            "isPicked": true
+        },
+        {
+            "id": 17,
+            "name": "Gadevoir",
+            "hp": 11,
+            "type": "electric",
+            "image": "https://i.pinimg.com/474x/95/a7/4b/95a74b1e4067ce40bbc3073da36cfd9f.jpg",
+            "attacks": [
+                {
+                    "name": "attack A",
+                    "damage": 5
+                },
+                {
+                    "name": "attack B",
+                    "damage": 5
+                }
+            ],
+            "weaknesses": [
+                {
+                    "name": "weaknesses A",
+                    "damage": 2
+                },
+                {
+                    "name": "weaknesses B",
+                    "damage": 2
+                }
+            ],
+            "isPicked": true
+        },
+        {
+            "id": 16,
+            "name": "Avalon Gadevoir",
+            "hp": 11,
+            "type": "electric",
+            "image": "http://cdn.shopify.com/s/files/1/1677/4363/products/Avalon_Gardevoir_GX_1024x1024.jpg?v=1521465188",
+            "attacks": [
+                {
+                    "name": "attack A",
+                    "damage": 1
+                },
+                {
+                    "name": "attack B",
+                    "damage": 1
+                }
+            ],
+            "weaknesses": [
+                {
+                    "name": "weaknesses A",
+                    "damage": 2
+                }
+            ],
+            "isPicked": false
+        },
+        {
+            "id": 15,
+            "name": "Raian Dragonite",
+            "hp": 11,
+            "type": "electric",
+            "image": "https://i.pinimg.com/736x/de/36/be/de36be0c771a2a124c3acb37158f742e.jpg",
+            "attacks": [
+                {
+                    "name": "attack A",
+                    "damage": 10
+                },
+                {
+                    "name": "attack B",
+                    "damage": 5
+                }
+            ],
+            "weaknesses": [],
+            "isPicked": true
+        },
+        {
+            "id": 14,
+            "name": "Gyarados",
+            "hp": 11,
+            "type": "electric",
+            "image": "https://d1rw89lz12ur5s.cloudfront.net/photo/collectorscache/file/0e18987029d311e68fdb07fdc98a1cc5/xy60.jpg",
+            "attacks": [
+                {
+                    "name": "attack A",
+                    "damage": 3
+                },
+                {
+                    "name": "attack B",
+                    "damage": 1
+                }
+            ],
+            "weaknesses": [
+                {
+                    "name": "weaknesses A",
+                    "damage": 5
+                }
+            ],
+            "isPicked": true
+        },
+        {
+            "id": 13,
+            "name": "Mewtwo",
+            "hp": 40,
+            "type": "electric",
+            "image": "https://d3fa68hw0m2vcc.cloudfront.net/436/213365473.jpeg",
+            "attacks": [
+                {
+                    "name": "attack A",
+                    "damage": 20
+                },
+                {
+                    "name": "attack B",
+                    "damage": 50
+                }
+            ],
+            "weaknesses": [],
+            "isPicked": true
+        },
+        {
+            "id": 12,
+            "name": "Persian",
+            "hp": 8,
+            "type": "electric",
+            "image": "http://static.api6.studiobebop.net/pokemon_data/card_images/Persian__44_112__EX_FireRed_%26_LeafGreen.jpg",
+            "attacks": [
+                {
+                    "name": "attack A",
+                    "damage": 1
+                },
+                {
+                    "name": "attack B",
+                    "damage": 2
+                }
+            ],
+            "weaknesses": [
+                {
+                    "name": "weaknesses A",
+                    "damage": 3
+                },
+                {
+                    "name": "weaknesses B",
+                    "damage": 5
+                }
+            ],
+            "isPicked": false
+        },
+        {
+            "id": 11,
+            "name": "Rayquaza",
+            "hp": 10,
+            "type": "electric",
+            "image": "https://image.smythstoys.com/original/desktop/181462_7.jpg",
+            "attacks": [
+                {
+                    "name": "attack A",
+                    "damage": 10
+                },
+                {
+                    "name": "attack B",
+                    "damage": 90
+                }
+            ],
+            "weaknesses": [
+                {
+                    "name": "weaknesses A",
+                    "damage": 5
+                }
+            ],
+            "isPicked": false
+        },
+        {
+            "id": 10,
+            "name": "Necrozma",
+            "hp": 20,
+            "type": "electric",
+            "image": "https://images-na.ssl-images-amazon.com/images/I/61fgmQAPUkL.jpg",
+            "attacks": [
+                {
+                    "name": "attack A",
+                    "damage": 9
+                },
+                {
+                    "name": "attack B",
+                    "damage": 9
+                }
+            ],
+            "weaknesses": [
+                {
+                    "name": "weaknesses A",
+                    "damage": 7
+                }
+            ],
+            "isPicked": true
+        },
+        {
+            "id": 9,
+            "name": "Palkia",
+            "hp": 18,
+            "type": "electric",
+            "image": "https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/1034127.jpg",
+            "attacks": [
+                {
+                    "name": "attack A",
+                    "damage": 60
+                },
+                {
+                    "name": "attack B",
+                    "damage": 30
+                }
+            ],
+            "weaknesses": [],
+            "isPicked": true
+        },
+        {
+            "id": 8,
+            "name": "Diaga",
+            "hp": 18,
+            "type": "electric",
+            "image": "https://images-na.ssl-images-amazon.com/images/I/61mxUcr2OyL.jpg",
+            "attacks": [
+                {
+                    "name": "attack A",
+                    "damage": 6
+                },
+                {
+                    "name": "attack B",
+                    "damage": 15
+                }
+            ],
+            "weaknesses": [],
+            "isPicked": false
+        },
+        {
+            "id": 7,
+            "name": "Genesect",
+            "hp": 18,
+            "type": "electric",
+            "image": "https://cdn11.bigcommerce.com/s-0kvv9/images/stencil/1280x1280/products/79806/86802/pokemon-black-white-plasma-blast-single-card-super-rare-holo-97-genesect-ex-16__99569.1461301152.jpg?c=2&imbypass=on",
+            "attacks": [
+                {
+                    "name": "attack A",
+                    "damage": 6
+                }
+            ],
+            "weaknesses": [],
+            "isPicked": true
+        },
+        {
+            "id": 6,
+            "name": "Articuno",
+            "hp": 17,
+            "type": "electric",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdNsEIgg9J6uLQ6yDYAG4YEqKM8FkEnDk40T38jjF7uk0-UomW&s",
+            "attacks": [
+                {
+                    "name": "attack A",
+                    "damage": 6
+                },
+                {
+                    "name": "attack B",
+                    "damage": 8
+                }
+            ],
+            "weaknesses": [
+                {
+                    "name": "weaknesses A",
+                    "damage": 20
+                }
+            ],
+            "isPicked": true
+        },
+        {
+            "id": 5,
+            "name": "Lugia",
+            "hp": 18,
+            "type": "electric",
+            "image": "https://crystal-cdn1.crystalcommerce.com/photos/886927/large/lugiaex108.jpg",
+            "attacks": [
+                {
+                    "name": "attack A",
+                    "damage": 12
+                }
+            ],
+            "weaknesses": [],
+            "isPicked": true
+        },
+        {
+            "id": 4,
+            "name": "Zapdos",
+            "hp": 17,
+            "type": "electric",
+            "image": "https://images-na.ssl-images-amazon.com/images/I/51ppjB8pQQL.jpg",
+            "attacks": [
+                {
+                    "name": "attack A",
+                    "damage": 30
+                },
+                {
+                    "name": "attack B",
+                    "damage": 80
+                }
+            ],
+            "weaknesses": [
+                {
+                    "name": "weaknesses A",
+                    "damage": 2
+                }
+            ],
+            "isPicked": true
+        },
+        {
+            "id": 3,
+            "name": "Pikachu",
+            "hp": 11,
+            "type": "electric",
+            "image": "https://freepngimg.com/thumb/pokemon/6-2-pokemon-png-hd.png",
+            "attacks": [
+                {
+                    "name": "attack A",
+                    "damage": 2
+                },
+                {
+                    "name": "attack B",
+                    "damage": 2
+                }
+            ],
+            "weaknesses": [
+                {
+                    "name": "weaknesses A",
+                    "damage": 2
+                },
+                {
+                    "name": "weaknesses B",
+                    "damage": 2
+                }
+            ],
+            "isPicked": true
+        },
+        {
+            "id": 2,
+            "name": "Kyurem",
+            "hp": 18,
+            "type": "electric",
+            "image": "https://i.pinimg.com/originals/0d/cc/5c/0dcc5c910a36d3c0b36ee752758d214e.jpg",
+            "attacks": [
+                {
+                    "name": "attack A",
+                    "damage": 60
+                },
+                {
+                    "name": "attack B",
+                    "damage": 12
+                }
+            ],
+            "weaknesses": [],
+            "isPicked": true
+        },
+        {
+            "id": 1,
+            "name": "Kyogre",
+            "hp": 110,
+            "type": "electric",
+            "image": "https://www.hillscards.co.uk/images/pokemon-trading-card-game-pokemon-sm-celestial-storm-card-kyogre-46-168-rare-holo-p49850-50563_image.jpg",
+            "attacks": [
+                {
+                    "name": "attack A",
+                    "damage": 30
+                },
+                {
+                    "name": "attack B",
+                    "damage": 10
+                }
+            ],
+            "weaknesses": [],
+            "isPicked": true
+        }
+    ]
+}

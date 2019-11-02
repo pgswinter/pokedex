@@ -1,0 +1,282 @@
+@import (css) url('https://fonts.googleapis.com/css?family=Atma:400,700&display=swap');
+@import (css) url('https://fonts.googleapis.com/css?family=Gaegu&display=swap');
+@import './variable.less';
+
+.wrap {
+    overflow: hidden;
+}
+.pokedesk-search-icon {
+    position: absolute;
+    right: 1.2em;
+    top: 1em;
+    font-size: 1.8em;
+    color: @bottomBarBackground;
+}
+ul {
+    list-style-type: none;
+    padding-left   : 0;
+    width          : 100%;
+    display        : flex;
+
+    &.format-img {
+        li {
+            width       : 50px;
+            float       : 1 1 auto;
+            margin-right: 5px;
+            margin-top  : 15px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+p {
+    font-family  : 'Gaegu', cursive;
+    margin-bottom: 0 !important;
+    font-size    : 2em;
+
+    &.toUppercase {
+        text-transform: uppercase;
+    }
+}
+
+.button-pokedex {
+    font-size  : 3em;
+    font-family: 'Atma', cursive;
+    font-weight: 700;
+    background : none;
+    border     : none;
+    color      : @colorAddButton;
+}
+
+.progress-bar {
+    background-color: @levelTubValueBackground  !important;
+    border-radius   : 15px;
+}
+
+.progress {
+    height       : 1.5rem !important;
+    border-radius: 15px !important;
+}
+
+label {
+    font-family  : 'Atma', cursive;
+    font-weight  : 700;
+    font-size    : 1.5em;
+    margin-bottom: 0 !important;
+    line-height  : 1.2;
+}
+
+.home-page {
+    position: relative;
+}
+
+.card__container-pokedex {
+    flex              : 0 0 calc(50% - 8px);
+    padding           : 15px;
+    max-width         : 50%;
+    display           : flex;
+    position          : relative;
+    cursor            : pointer;
+    margin-bottom     : 20px;
+    -webkit-box-shadow: 3px 3px 5px 1px @cardBoxShadow;
+    /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow: 3px 3px 5px 1px @cardBoxShadow;
+    /* Firefox 3.5 - 3.6 */
+    box-shadow: 3px 3px 5px 1px @cardBoxShadow;
+    /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+    background-color: @cardBackground;
+
+    &:nth-child(even) {
+        margin-right: 15px;
+    }
+
+    &:hover {
+        -webkit-box-shadow: 3px 3px 5px 1px @cardBoxShadowHover;
+        /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+        -moz-box-shadow: 3px 3px 5px 1px @cardBoxShadowHover;
+        /* Firefox 3.5 - 3.6 */
+        box-shadow: 3px 3px 5px 1px @cardBoxShadowHover;
+
+        /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+        .button-pokedex {
+            display: block;
+        }
+    }
+
+    .card__img-wrap,
+    .item__card {
+        display: block;
+    }
+
+    .card__img-wrap {
+        flex       : 0 0 30%;
+        align-items: center;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .item__card {
+        flex          : 0 0 70%;
+        display       : flex;
+        flex-direction: column;
+        padding       : 0 0 0 2em;
+
+        .text__item {
+            display        : flex;
+            align-items    : center;
+            justify-content: left;
+
+            label,
+            div {
+                flex: 0 0 50%;
+            }
+        }
+    }
+
+    .button-pokedex {
+        display : none;
+        position: absolute;
+        top     : 0;
+        right   : 0.5em;
+    }
+}
+
+.search-page {
+    position: absolute;
+    display : none;
+    padding : 10px;
+
+    &.active {
+        z-index         : 3;
+        display         : block;
+        background-color: @modalContentBackground;
+        border-radius   : 5px;
+        width           : 92%;
+        height          : 92%;
+        top             : 50%;
+        left            : 50%;
+        transform       : translate(-50%, -50%);
+    }
+
+    .searchWrap {
+        height: 100%;
+
+        input {
+            text-indent  : 15px;
+            width        : 100%;
+            border       : 1px solid @searchBoxBorder;
+            padding      : 10px 0;
+            font-family  : 'Gaegu', cursive;
+            font-size    : 2em;
+            margin-bottom: 15px;
+        }
+
+        .searchWrap__seachModal {
+            height    : calc(100% - 90px);
+            overflow  : hidden;
+            overflow-y: scroll;
+
+            .modal__container-pokedex {
+                .card__container-pokedex {
+
+                    flex         : 0 0 100%;
+                    max-width    : 100%;
+                    padding      : 10px;
+                    margin-bottom: 15px;
+
+                    &:nth-child(even) {
+                        margin-right: 0;
+                    }
+
+                    .card__img-wrap {
+                        flex: 0 0 30%;
+                    }
+
+                    .item__card {
+                        flex: 0 0 70%;
+
+                        .text__item {
+                            label {
+                                flex: 0 0 30%;
+                            }
+
+                            p {
+                                flex: 0 0 70%;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+
+    }
+
+}
+
+.container-pokedex {
+    height    : 100vh;
+    overflow  : hidden;
+    overflow-y: scroll;
+    display   : flex;
+    flex-wrap : wrap;
+    padding   : 88px 10px;
+
+    &.active-modal {
+        &:before {
+            top             : 0;
+            left            : 0;
+            content         : '';
+            z-index         : 2;
+            display         : block;
+            position        : absolute;
+            width           : 100%;
+            height          : 100%;
+            background-color: @modalOutside;
+        }
+    }
+
+    h1 {
+        width           : 100%;
+        padding         : 20px 0;
+        color           : #000;
+        position        : absolute;
+        top             : 0;
+        left            : 0;
+        text-align      : center;
+        background-color: #fff;
+        margin          : 0;
+        z-index         : 1;
+        font-family     : 'Atma', cursive;
+        font-weight     : 700;
+    }
+
+    .add-wrapper {
+        width           : 100%;
+        height          : 10%;
+        position        : absolute;
+        bottom          : 0;
+        left            : 0;
+        background-color: @bottomBarBackground;
+
+        .btn-open {
+            width           : 150px;
+            height          : 150px;
+            position        : absolute;
+            left            : 50%;
+            transform       : translate(-50%, -50%);
+            background-color: @bottomBarBackground;
+            border-radius   : 50%;
+            color           : #fff;
+            cursor          : pointer;
+            font-size       : 7em;
+        }
+    }
+
+}
