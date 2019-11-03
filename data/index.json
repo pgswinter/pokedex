@@ -78,7 +78,7 @@
                     "damage": 2
                 }
             ],
-            "isPicked": true
+            "isPicked": false
         },
         {
             "id": 21,
@@ -239,7 +239,7 @@
                 }
             ],
             "weaknesses": [],
-            "isPicked": true
+            "isPicked": false
         },
         {
             "id": 14,
@@ -377,7 +377,7 @@
                 }
             ],
             "weaknesses": [],
-            "isPicked": true
+            "isPicked": false
         },
         {
             "id": 8,
@@ -396,7 +396,7 @@
                 }
             ],
             "weaknesses": [],
-            "isPicked": false
+            "isPicked": true
         },
         {
             "id": 7,
@@ -411,7 +411,7 @@
                 }
             ],
             "weaknesses": [],
-            "isPicked": true
+            "isPicked": false
         },
         {
             "id": 6,
@@ -435,7 +435,7 @@
                     "damage": 20
                 }
             ],
-            "isPicked": true
+            "isPicked": false
         },
         {
             "id": 5,
@@ -450,7 +450,7 @@
                 }
             ],
             "weaknesses": [],
-            "isPicked": true
+            "isPicked": false
         },
         {
             "id": 4,
@@ -474,7 +474,7 @@
                     "damage": 2
                 }
             ],
-            "isPicked": true
+            "isPicked": false
         },
         {
             "id": 3,
@@ -502,7 +502,7 @@
                     "damage": 2
                 }
             ],
-            "isPicked": true
+            "isPicked": false
         },
         {
             "id": 2,
@@ -521,7 +521,7 @@
                 }
             ],
             "weaknesses": [],
-            "isPicked": true
+            "isPicked": false
         },
         {
             "id": 1,
@@ -540,7 +540,7 @@
                 }
             ],
             "weaknesses": [],
-            "isPicked": true
+            "isPicked": false
         }
     ]
 }

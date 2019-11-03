@@ -13,7 +13,8 @@ import ProgressBar from 'react-bootstrap/ProgressBar'
 
 import {
   reqPokedesk,
-  reqRemovePokemon
+  reqRemovePokemon,
+  reqProcessLocal
 } from '../../actions/pokedesk/pokedeskActions';
 
 class HomePage extends PureComponent {
@@ -21,8 +22,8 @@ class HomePage extends PureComponent {
     super(props);
 
     this.state = {
-      listPokemon: [],
-      activeModal: false
+      pokedex: [],
+      activeModal: false,
     };
   }
 
@@ -58,11 +59,20 @@ class HomePage extends PureComponent {
   }
 
   handleRemove = (id) => {
+    // PROCESS LOCAL
+    const { pokemonList } = this.props;
+    const pokedex = pokemonList.data && pokemonList.data.pokedesk
+    const localParams = {
+      data: pokedex,
+      type: 'remove/wasPicked',
+      id
+    }
+    this.props.reqProcessLocal(localParams);
+    // SAVE DATABASE
     const params = {
       id
     }
     this.props.reqRemovePokemon(params);
-    window.location.reload();
   }
 
   render() {
@@ -73,7 +83,7 @@ class HomePage extends PureComponent {
     if (loading !== false || isLoaded !== true) {
       return <Loading />
     }
-
+    
     return (
       <div>
         <SearchPage active={activeModal} />
@@ -81,8 +91,9 @@ class HomePage extends PureComponent {
           <div className={`container-pokedex ${activeModal ? 'active-modal' : ''}`}>
             <h1>My pokedex</h1>
             {
-              pokemonList && pokemonList.data && pokemonList.data.pokedesk &&
-              pokemonList.data.pokedesk.map((item, i) => {
+              pokemonList && pokemonList.data && pokemonList.data.pokedesk
+              && pokemonList.data.pokedesk.length > 0
+              && pokemonList.data.pokedesk.map((item, i) => {
                 const {
                   id,
                   hp,
@@ -96,6 +107,7 @@ class HomePage extends PureComponent {
                     <img src={image} alt="_pikachu" />
                   </div>
                   <div className="item__card">
+                    {id}
                     <div className="text__item">
                       <p className="toUppercase">{name}</p>
                     </div>
@@ -146,16 +158,17 @@ HomePage.defaultProps = {
 
 const mapStateToProps = state => {
   const {
-    reqPokedesk
+    reqPokedesk,
   } = state
   return {
-    pokemonList: reqPokedesk
+    pokemonList: reqPokedesk,
   }
 }
 
 const mapDispatchToProps = dispatch => ({
   reqPokedesk: (params) => dispatch(reqPokedesk(params)),
-  reqRemovePokemon: (params) => dispatch(reqRemovePokemon(params))
+  reqRemovePokemon: (params) => dispatch(reqRemovePokemon(params)),
+  reqProcessLocal: (params) => dispatch(reqProcessLocal(params)),
 });
 
 export default connect(

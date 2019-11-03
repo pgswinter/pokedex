@@ -1,4 +1,12 @@
 import {
+    REQUEST_SEARCH_LOCAL,
+
+    REQUEST_ALL_UNSELECT_POKEMON,
+    REQUEST_ALL_UNSELECT_POKEMON_SUCCESS,
+    REQUEST_ALL_UNSELECT_POKEMON_FAIL,
+
+    REQUEST_PROCESS_LOCAL,
+
     REQUEST_POKEDESK,
     REQUEST_POKEDESK_SUCCESS,
     REQUEST_POKEDESK_FAIL,
@@ -15,6 +23,43 @@ import {
     REQUEST_SEARCH_POKEMON_SUCCESS,
     REQUEST_SEARCH_POKEMON_FAIL
 } from './pokedeskActionTypes';
+// *********************************************************
+// REQUEST REQUEST_SEARCH_LOCAL
+// *********************************************************
+export const reqSearchLocal = (params) => {
+    return {
+        type: REQUEST_SEARCH_LOCAL,
+        params
+    }
+}
+// *********************************************************
+// REQUEST REQUEST_ALL_UNSELECT_POKEMON
+// *********************************************************
+export const reqAllUnselectPokemon = (params) => {
+    return {
+        type: REQUEST_ALL_UNSELECT_POKEMON,
+        params
+    }
+}
+export const reqAllUnselectPokemonSuccess = (data) => {
+    return {
+        type: REQUEST_ALL_UNSELECT_POKEMON_SUCCESS,
+        payload: data
+    }
+}
+export const reqAllUnselectPokemonFail = (error) => ({
+    type: REQUEST_ALL_UNSELECT_POKEMON_FAIL,
+    payload: error
+})
+// *********************************************************
+// REQUEST REQUEST_PROCESS_LOCAL
+// *********************************************************
+export const reqProcessLocal = (params) => {
+    return {
+        type: REQUEST_PROCESS_LOCAL,
+        params
+    }
+}
 // *********************************************************
 // REQUEST REQUEST_POKEDESK
 // *********************************************************

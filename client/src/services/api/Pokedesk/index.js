@@ -6,6 +6,9 @@ export default class {
     constructor(initApi) {
         this.initApi = initApi;
     }
+    getAllUnselect = () => {
+        return this.initApi.get(`${commonApi.getAllUnselect}`);
+    }
     getAllLimit = (params) => {
         const { limit  } = params;
         return this.initApi.get(`${commonApi.get}${limit}`);

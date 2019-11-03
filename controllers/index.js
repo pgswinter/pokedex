@@ -21,6 +21,12 @@ class Cards {
             search_result: filterPokedesk
         })
     }
+    static getAllUnselectPokemon(req, res) {
+        const filterPokedesk = pokedesk.filter(item => item.isPicked === false);
+        return res.status(200).send({
+            pokedesk: filterPokedesk
+        })
+    }
     static getAllLimitPokemon(req, res) {
         const { limit } = req.params;
 
@@ -107,13 +113,14 @@ class Cards {
         const {
             id
         } = req.body;
+        
         const newPokedesk = pokedesk.map(item => {
             if (item.id === id) {
                 item.isPicked = false
             }
             return item;
         });
-
+        
         const newData = {
             "pokedesk": newPokedesk
         }
@@ -121,7 +128,7 @@ class Cards {
         fs.writeFileSync(path.join(__dirname, '../data/index.json'), JSON.stringify(newData, null, 4));
         return res.status(200).send({
             message: 'remove pokemon success',
-            new_pokedesk: pokedesk
+            new_pokedesk: newData
         })
     }
 }
